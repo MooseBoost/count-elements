@@ -1,4 +1,7 @@
 def count_elements(array)
-  # code goes here
+  hash = {}
+  array.each { |i| hash.has_key?(i) ? hash[i] += 1 : hash[i] = 1 }
+  
+  hash
 end
  
